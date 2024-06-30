@@ -1,0 +1,25 @@
+{
+  "name": "manoranjan-backend",
+  "version": "1.0.0",
+  "description": "A sophisticated OTT platform crafted with NextJS, ExpressJS and MongoDB. Seamless navigation through Home, Movies, and Shows Pages, delve into comprehensive Movie and Show views, and enjoy streamlined experiences with user authentication, an intuitive admin panel for content management, and an integrated payment portal for seamless transactions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "author": "Swaraj Patil",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.4.4",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5",
+    "nodemon": "^3.1.4"
+  }
+}

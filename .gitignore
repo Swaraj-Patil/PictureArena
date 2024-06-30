@@ -1,0 +1,43 @@
+# Node modules
+node_modules/
+client/node_modules
+server/node_modules
+
+# Environment variables
+.env
+server/config/.env.local
+client/.env*.local
+
+# Logs
+logs/
+*.log
+
+# Build outputs
+client/.next/
+client/out/
+client/build
+server/dist/
+
+# Dependency directories
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# IDE specific files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+.DS_Store
