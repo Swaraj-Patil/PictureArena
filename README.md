@@ -1,6 +1,6 @@
-# Manoranjan - OTT Platform
+# PictureArena - OTT Platform
 
-Manoranjan is a full-stack OTT platform built with Next.js, Express.js, and MongoDB. It offers a seamless streaming experience with features like user authentication, an admin panel, and an integrated payment portal.
+PictureArena is a full-stack OTT platform built with Next.js, Express.js, and MongoDB. It offers a seamless streaming experience with features like user authentication, an admin panel, and an integrated payment portal.
 
 ## Features
 
@@ -17,8 +17,8 @@ Manoranjan is a full-stack OTT platform built with Next.js, Express.js, and Mong
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/Swaraj-Patil/manoranjan.git
-   cd manoranjan
+   git clone https://github.com/Swaraj-Patil/PictureArena.git
+   cd PictureArena
 
 2. **Install dependencies**:
    ```bash
@@ -32,7 +32,7 @@ Manoranjan is a full-stack OTT platform built with Next.js, Express.js, and Mong
    ```
 
 3. **Set up environment variables**:
-- Create a `.env.local` file in both `client/` and `server/` directories based on the `example-env` file in the `config` folder. This file should contain all required environment variables.
+- Create a `.env.local` file in both `client/` and `server/config` directories based on the `example-env` files. These files should contain all required environment variables.
 
 4. **Run the development server**:
 
@@ -54,4 +54,4 @@ Manoranjan is a full-stack OTT platform built with Next.js, Express.js, and Mong
 Feel free to open issues or submit pull requests. For major changes, please open an issue first to discuss what you would like to change.
 
 # License
-This project is licensed under the MIT License - see the [LICENSE](https://manoranjan.com/license) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://picturearena.com/license) file for details.

@@ -5,9 +5,9 @@ const options = {
     definition: {
         openapi: '3.0.0',
         info: {
-            title: 'Manoranjan API',
+            title: 'PictureArena API',
             version: '1.0.0',
-            description: 'API documentation for the Manoranjan OTT platform'
+            description: 'API documentation for the PictureArena OTT platform'
         }
     },
     apis: [

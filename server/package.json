@@ -1,5 +1,5 @@
 {
-  "name": "manoranjan-backend",
+  "name": "picturearena-backend",
   "version": "1.0.0",
   "description": "A sophisticated OTT platform crafted with NextJS, ExpressJS and MongoDB. Seamless navigation through Home, Movies, and Shows Pages, delve into comprehensive Movie and Show views, and enjoy streamlined experiences with user authentication, an intuitive admin panel for content management, and an integrated payment portal for seamless transactions.",
   "main": "index.js",
