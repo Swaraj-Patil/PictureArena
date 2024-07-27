@@ -1,14 +1,13 @@
-// 'use client'
 import React from 'react'
 import logoDesktop from '@/public/media/logo-desktop.svg'
 import Image from 'next/image'
 import { MagnifyingGlassIcon, BellIcon } from '@heroicons/react/24/outline'
-import Link from 'next/link'
 import classes from './Navbar.module.css'
+import NavLink from './NavLink'
 
 const Navbar = () => {
   return (
-    <div className='bg-[#00000080] text-white flex justify-between items-center px-24 py-5'>
+    <div className='fixed z-50 w-full text-white flex justify-between items-center px-24 py-5'>
         <div className='flex items-center gap-x-2'>
             <Image 
                 src={logoDesktop} 
@@ -17,10 +16,10 @@ const Navbar = () => {
         </div>
 
         <ul className={`${classes.navbarLinks} bg-black-06 flex gap-x-2 p-2 rounded-xl border-4 border-black-12`}>
-            <li><Link href='/'>Home</Link></li>
-            <li><Link href='/list'>Movies & Shows</Link></li>
-            <li><Link href='/support'>Support</Link></li>
-            <li><Link href='/subscriptions'>Subscriptions</Link></li>
+            <NavLink href='/'>Home</NavLink>
+            <NavLink href='/list'>Movies & Shows</NavLink>
+            <NavLink href='/support'>Support</NavLink>
+            <NavLink href='/subscriptions'>Subscriptions</NavLink>
         </ul>
 
         <div className='flex gap-x-7'>
