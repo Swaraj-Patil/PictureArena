@@ -1,0 +1,26 @@
+.footerLinks > div {
+    width: 240px;
+}
+
+.footerLinks > div:last-child > ul > li {
+    background-color: #1A1A1A;
+    padding: 12px;
+    border-radius: 16px;
+    border: 1px solid #262626;
+    margin: 0;
+}
+
+.footerLinks > div > p {
+    margin-bottom: 24px;
+}
+
+.footerLinks > div > ul {
+    color: #999999;
+}
+
+.footerLinks > div > ul > li {
+    margin-bottom: 14px;
+}
+.footerLinks > div > ul > li:last-child {
+    margin-bottom: 0;
+}
