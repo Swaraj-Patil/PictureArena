@@ -58,7 +58,7 @@ const HomePage = () => {
         />
       </div>
 
-      <div className='absolute z-1 top-0 left-0 w-screen h-screen flex items-center justify-center'>
+      <div className='absolute z-1 top-0 left-0 w-full h-screen flex items-center justify-center'>
         <div className=''>
           <Image
             src={PlayButton}
