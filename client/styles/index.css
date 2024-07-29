@@ -51,6 +51,11 @@ th:last-child {
     border-top-right-radius: 12px;
 }
 
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+
+}
+
 @keyframes tabPanel {
     from {
         opacity: 0;

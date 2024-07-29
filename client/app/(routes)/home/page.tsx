@@ -2,8 +2,135 @@ import Image from 'next/image'
 import React from 'react'
 import landingImage from '@/public/media/landing-image.png'
 import PlayButton from '@/public/media/play-button.svg'
-import { Button } from '@/app/_components'
+import { Button, Carousel, DeviceCard, Typography } from '@/app/_components'
 import { PlayIcon } from '@heroicons/react/24/solid'
+import actionBanner1 from '@/public/media/banner-action1.svg'
+import actionBanner2 from '@/public/media/banner-action2.svg'
+import actionBanner3 from '@/public/media/banner-action3.svg'
+import actionBanner4 from '@/public/media/banner-action4.svg'
+import actionBanner5 from '@/public/media/banner-action5.svg'
+import mobileIcon from '@/public/media/mobile-icon.svg'
+import tabletIcon from '@/public/media/tablet-icon.svg'
+import smartTvIcon from '@/public/media/smart-tv-icon.svg'
+import laptopIcon from '@/public/media/laptop-icon.svg'
+import consoleIcon from '@/public/media/console-icon.svg'
+import headsetIcon from '@/public/media/headset-icon.svg'
+
+const categoriesData = [
+  {
+    name: 'Action',
+    img: actionBanner1,
+  },
+  {
+    name: 'Adventure',
+    img: actionBanner2,
+  },
+  {
+    name: 'Comedy',
+    img: actionBanner3,
+  },
+  {
+    name: 'Drama',
+    img: actionBanner4,
+  },
+  {
+    name: 'Horror',
+    img: actionBanner5,
+  },
+  {
+    name: 'Action',
+    img: actionBanner1,
+  },
+  {
+    name: 'Adventure',
+    img: actionBanner2,
+  },
+  {
+    name: 'Comedy',
+    img: actionBanner3,
+  },
+  {
+    name: 'Drama',
+    img: actionBanner4,
+  },
+  {
+    name: 'Horror',
+    img: actionBanner5,
+  },
+  {
+    name: 'Action',
+    img: actionBanner1,
+  },
+  {
+    name: 'Adventure',
+    img: actionBanner2,
+  },
+  {
+    name: 'Comedy',
+    img: actionBanner3,
+  },
+  {
+    name: 'Drama',
+    img: actionBanner4,
+  },
+  {
+    name: 'Horror',
+    img: actionBanner5,
+  },
+  {
+    name: 'Action',
+    img: actionBanner1,
+  },
+  {
+    name: 'Adventure',
+    img: actionBanner2,
+  },
+  {
+    name: 'Comedy',
+    img: actionBanner3,
+  },
+  {
+    name: 'Drama',
+    img: actionBanner4,
+  },
+  {
+    name: 'Horror',
+    img: actionBanner5,
+  },
+]
+
+const devicesData = [
+  {
+    name: 'Smartphone',
+    description: 'PictureArena is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store',
+    icon: mobileIcon,
+  },
+  {
+    name: 'Tablet',
+    description: 'PictureArena is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store',
+    icon: tabletIcon,
+  },
+  {
+    name: 'Smart TV',
+    description: 'PictureArena is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store',
+    icon: smartTvIcon,
+  },
+  {
+    name: 'Laptops',
+    description: 'PictureArena is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store',
+    icon: laptopIcon,
+  },
+  {
+    name: 'Gaming Consoles',
+    description: 'PictureArena is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store',
+    icon: consoleIcon,
+  },
+  {
+    name: 'VR Headsets',
+    description: 'PictureArena is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store',
+    icon: headsetIcon,
+  },
+]
 
 const playButton = <svg width="360" height="360" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
   <g filter="url(#filter0_b_503_5009)">
@@ -49,7 +176,7 @@ const playButton = <svg width="360" height="360" viewBox="0 0 200 200" fill="non
 
 const HomePage = () => {
   return (
-    <div className='bg-black-08'>
+    <div className='bg-black-08 font-manrope text-white'>
       <div>
         <Image
           priority
@@ -69,14 +196,43 @@ const HomePage = () => {
 
       </div>
 
-      <div className='font-manrope flex flex-col items-center -mt-10'>
-        <p className='font-bold text-5xl text-white mb-6'>The Best Streaming Experience</p>
-        <p className='text-grey-60 text-md w-[900px] text-center mb-12'>StreamVibe is the best streaming experience for watching your favorite movies and shows on demand, anytime, anywhere. With StreamVibe, you can enjoy a wide variety of content, including the latest blockbusters, classic movies, popular TV shows, and more. You can also create your own watchlists, so you can easily find the content you want to watch.</p>
-        <Button 
+      <div className='flex flex-col items-center -mt-10'>
+        <p className='font-bold text-5xl mb-6'>The Best Streaming Experience</p>
+        <p className='text-grey-60 text-md w-[900px] text-center mb-12'>PictureArena is the best streaming experience for watching your favorite movies and shows on demand, anytime, anywhere. With PictureArena, you can enjoy a wide variety of content, including the latest blockbusters, classic movies, popular TV shows, and more. You can also create your own watchlists, so you can easily find the content you want to watch.</p>
+        <Button
           label='Start Watching Now'
           icon={PlayIcon}
         />
       </div>
+
+      <div className='px-20 py-44'>
+        <Carousel
+          title='Explore our wide variety of categories'
+          description="Whether you're looking for a comedy to make you laugh, a drama to make you think, or a documentary to learn something new"
+          items={categoriesData}
+        />
+
+        <div className='mt-36'>
+          <Typography
+            title='We Provide you streaming experience across various devices.'
+            description='With PictureArena, you can enjoy your favorite movies and TV shows anytime, anywhere. Our platform is designed to be compatible with a wide range of devices, ensuring that you never miss a moment of entertainment.'
+          />
+
+          <div className='flex flex-wrap gap-7 mt-20'>
+            {devicesData.map((device, index) =>
+              <DeviceCard
+                key={index}
+                name={device.name}
+                description={device.description}
+                icon={device.icon}
+              />)}
+          </div>
+
+
+        </div>
+      </div>
+
+
     </div>
   )
 }
