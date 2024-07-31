@@ -1,4 +1,6 @@
 'use client'
+import { toggleSubscriptionType } from '@/lib/features/layout/layoutSlice'
+import { useAppDispatch } from '@/lib/hooks'
 import React, { FC, useState } from 'react'
 
 interface ToggleButtonProps {
@@ -6,10 +8,13 @@ interface ToggleButtonProps {
 }
 
 const ToggleButton: FC<ToggleButtonProps> = ({ items }) => {
+    const dispatch = useAppDispatch()
+
     const [active, setActive] = useState(items[0])
 
     const toggleActiveButton = (value: string) => {
         setActive(value)
+        dispatch(toggleSubscriptionType(value as 'Monthly' | 'Yearly'))
     }
   return (
     <div className='h-16 bg-black-06 border border-black-15 rounded-[10px] p-[10px] flex items-center justify-center text-[14px] font-medium'>
