@@ -1,0 +1,78 @@
+@import url('./fonts.css');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope';
+}
+
+* {
+    box-sizing: border-box;
+    line-height: normal;
+    font-family: inherit;
+    margin: unset;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+ul {
+    margin: 0;
+    margin-inline: unset !important;
+    padding: 0;
+    list-style: none;
+}
+
+input {
+    background-color: transparent;
+    width: 100%;
+}
+
+input:focus {
+    outline: none;
+}
+
+.tab-panel--selected {
+    animation-name: tabPanel;
+    animation-duration: 300ms;
+    animation-timing-function: linear;
+}
+
+table {
+    table-layout: fixed;
+}
+
+th:first-child {
+    border-top-left-radius: 12px;
+}
+
+th:last-child {
+    border-top-right-radius: 12px;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+
+}
+
+.prevent-select {
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+}
+
+@keyframes tabPanel {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        overflow: 1;
+    }
+}

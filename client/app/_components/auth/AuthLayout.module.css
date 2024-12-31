@@ -1,0 +1,13 @@
+.authBackground {
+    /* background: url('../../../public/media/login-background.jpg') center; */
+    /* background: url('../../../public/media/hollywood-picture.jpg') center; */
+    background: url('../../../public/media/deadpool-bg.jpg') left;
+    background-size: cover;
+    filter: blur(4px);
+}
+
+.registerBackground {
+    /* background: url('../../../public/media/couple-watching-movie.jpg') center; */
+    background-color: rgba(0, 0, 0, 0.4);
+    background-size: cover;
+}

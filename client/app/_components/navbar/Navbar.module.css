@@ -1,0 +1,8 @@
+.navbarLinks > li{
+    overflow: hidden;
+    border-radius: 8px !important;
+}
+
+.navbarLinks > li > a {
+    padding: 14px 24px;
+}
