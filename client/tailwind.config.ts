@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import asd from './public/media/login-background.jpg'
 
 const config: Config = {
   content: [
@@ -13,7 +14,8 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         gradient: 'linear-gradient(90deg, #E5000000, #E50000, #E5000000)',
-        gradient1: 'linear-gradient(180deg, #14141400, #141414)'
+        gradient1: 'linear-gradient(180deg, #14141400, #141414)',
+        'login-background': "url('/public/media/login-background.jpg')"
       },
       colors: {
         black: {

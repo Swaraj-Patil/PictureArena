@@ -30,6 +30,7 @@ input {
     background-color: transparent;
     width: 100%;
 }
+
 input:focus {
     outline: none;
 }
@@ -47,6 +48,7 @@ table {
 th:first-child {
     border-top-left-radius: 12px;
 }
+
 th:last-child {
     border-top-right-radius: 12px;
 }
@@ -56,10 +58,20 @@ th:last-child {
 
 }
 
+.prevent-select {
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+}
+
 @keyframes tabPanel {
     from {
         opacity: 0;
     }
+
     to {
         overflow: 1;
     }

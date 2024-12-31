@@ -1,5 +1,6 @@
 import { Action, combineSlices, configureStore, ThunkAction } from '@reduxjs/toolkit'
 import { layoutSlice } from './features/layout/layoutSlice'
+import { userSlice } from './features/user/userSlice'
 
 const rootReducer = combineSlices(layoutSlice)
 

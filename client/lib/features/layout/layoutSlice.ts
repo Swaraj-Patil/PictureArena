@@ -10,7 +10,7 @@ const initialState: LayoutSliceState = {
 }
 
 export const layoutSlice = createAppSlice({
-    name: 'layoutSlice',
+    name: 'layout',
     initialState,
     reducers: create => ({
         toggleSubscriptionType: create.reducer((state, action: PayloadAction<'Monthly' | 'Yearly'>) => {

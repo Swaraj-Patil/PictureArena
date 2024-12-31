@@ -18,19 +18,20 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
-    <StoreProvider>
-      <html lang="en">
-        <head>
-          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          <meta name="theme-color" content="#000000" />
-        </head>
-        <body className={inter.className}>
+    <html lang="en">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#000000" />
+      </head>
+      <body className={inter.className}>
+        <StoreProvider>
           <Navbar />
           <main>{children}</main>
           <Footer />
-        </body>
-      </html>
-    </StoreProvider>
+        </StoreProvider>
+      </body>
+    </html>
   );
 }

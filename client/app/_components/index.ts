@@ -8,6 +8,8 @@ import DeviceCard from "./deviceCard/DeviceCard";
 import FAQ from "./faq/FAQ";
 import PlanCard from "./planCard/PlanCard";
 import FreeTrial from "./freeTrail/FreeTrial";
+import AuthLayout from "./auth/AuthLayout";
+import Input from "./input/Input";
 
 export {
     Navbar,
@@ -20,4 +22,6 @@ export {
     FAQ,
     PlanCard,
     FreeTrial,
+    AuthLayout,
+    Input,
 }
